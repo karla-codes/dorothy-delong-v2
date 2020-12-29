@@ -1,0 +1,93 @@
+/*** simple reset ***/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*** base styles ***/
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  font-size: 1rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+/*** header styles ***/
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 3.125rem auto;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 2rem;
+  padding-right: 0.5rem;
+}
+
+.logo h1 {
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+nav {
+  margin: 1.2rem auto;
+}
+
+.nav li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.nav li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+#work-link {
+  font-weight: bold;
+}
+
+/*** main styles ***/
+
+main {
+  width: 100%;
+}
+
+.work {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.work img {
+  width: 100%;
+}
+
+.work img:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
