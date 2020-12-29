@@ -91,3 +91,27 @@ main {
 .work img:not(:last-child) {
   margin-bottom: 2.5rem;
 }
+
+/*** footer styles ***/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 3.125rem auto 1.875rem;
+}
+
+.social {
+  display: inherit;
+  align-items: center;
+}
+
+.social svg {
+  width: 1.2rem;
+}
+
+.social a:not(:last-child) {
+  margin-right: 1rem;
+}
