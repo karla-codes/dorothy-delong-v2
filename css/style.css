@@ -30,6 +30,10 @@ a:visited {
   color: #000;
 }
 
+a:hover {
+  border-bottom: 2px solid #905bcb;
+}
+
 /*** header styles ***/
 
 header {
@@ -98,14 +102,16 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   width: 85%;
   margin: 3.125rem auto 1.875rem;
 }
 
 .social {
   display: inherit;
-  align-items: center;
+}
+
+.social a {
+  border: none;
 }
 
 .social svg {
