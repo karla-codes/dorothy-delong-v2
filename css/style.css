@@ -21,6 +21,7 @@ body {
 
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 a:link,
@@ -39,6 +40,8 @@ a:hover {
 header {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
   margin: 3.125rem auto;
 }
 
@@ -46,7 +49,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .logo img {
@@ -61,7 +64,7 @@ header {
 }
 
 nav {
-  margin: 1.2rem auto;
+  margin-top: 1.2rem;
 }
 
 .nav li {
@@ -84,12 +87,14 @@ main {
 }
 
 .work {
-  width: 85%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .work img {
-  width: 100%;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .work img:not(:last-child) {
@@ -103,7 +108,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   width: 85%;
-  margin: 3.125rem auto 1.875rem;
+  margin: auto auto 2rem;
 }
 
 .social {
@@ -120,4 +125,60 @@ footer {
 
 .social a:not(:last-child) {
   margin-right: 1rem;
+}
+
+/********** Media Quesries *********/
+
+@media screen and (min-width: 700px) {
+  .work img {
+    width: 75%;
+  }
+
+  .work img:not(:last-child) {
+    margin-bottom: 4.4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  .nav li:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  .work {
+    flex-direction: row;
+    overflow-x: scroll;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 90%;
+  }
+
+  .work img {
+    width: 70%;
+    margin: 0;
+  }
+
+  .work img:not(:first-child) {
+    margin: 0 4rem;
+  }
+
+  .work img:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .work img {
+    width: 60%;
+  }
 }
