@@ -5,6 +5,7 @@
 //////////////////
 
 // save page locations
+const initPage = '/';
 const workPage = "/index.html";
 const aboutPage = "/about/index.html";
 
@@ -16,7 +17,7 @@ const aboutLink = document.querySelector("#about-link");
 const currentPage = window.location.pathname;
 
 // make current page link bold
-if (currentPage === workPage) {
+f (currentPage === initPage || currentPage === workPage) {
   workLink.classList.add("link-selected");
   aboutLink.classList.remove("link-selected");
 } else {
