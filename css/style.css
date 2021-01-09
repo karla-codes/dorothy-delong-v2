@@ -35,6 +35,10 @@ a:hover {
   border-bottom: 2px solid #905bcb;
 }
 
+.link-selected {
+  font-weight: bold;
+}
+
 /***** Image Modal ******/
 
 .outer-modal {
@@ -56,9 +60,9 @@ a:hover {
 
 .inner-modal {
   background-color: #fff;
-  width: 80%;
+  width: 95%;
   max-width: 64rem;
-  padding: 2rem;
+  padding: 10px;
   border-radius: 5px;
 }
 
@@ -111,9 +115,9 @@ nav {
   margin-right: 1rem;
 }
 
-#work-link {
+/* #work-link {
   font-weight: bold;
-}
+} */
 
 footer {
   position: sticky;
@@ -236,6 +240,10 @@ About Page
     margin-top: 0;
   }
 
+  .inner-modal {
+    padding: 2rem;
+  }
+
   .about {
     width: 70%;
     max-width: 800px;
@@ -269,9 +277,13 @@ About Page
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1026px) {
   .nav li:not(:last-child) {
     margin-right: 2rem;
+  }
+
+  .inner-modal {
+    width: 80%;
   }
 
   main {
@@ -287,8 +299,8 @@ About Page
   }
 
   .work img {
-    width: 70%;
-    height: 60vh;
+    width: 76%;
+    height: 31.25rem;
     object-fit: cover;
     margin: 0;
   }
